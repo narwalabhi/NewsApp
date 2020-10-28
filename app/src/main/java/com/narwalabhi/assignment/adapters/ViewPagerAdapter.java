@@ -1,7 +1,6 @@
 package com.narwalabhi.assignment.adapters;
 
 import android.util.Log;
-import android.view.View;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -9,7 +8,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 
-import com.narwalabhi.assignment.ui.BlankFragment;
+import com.narwalabhi.assignment.ui.NewsArticleFragment;
 
 public class ViewPagerAdapter extends FragmentStatePagerAdapter {
 
@@ -29,7 +28,7 @@ public class ViewPagerAdapter extends FragmentStatePagerAdapter {
     @Override
     public Fragment getItem(int position) {
         Log.d(TAG, "getItem: " + sources[position]);
-        return  BlankFragment.newInstance(sources[position]);
+        return  NewsArticleFragment.newInstance(sources[position]);
     }
 
     @Override

@@ -8,4 +8,9 @@
     <string name="title_activity_main2">MainActivity2</string>
     <string name="newsApp">News App</string>
     <string name="newsDetails">News Details</string>
+    <string name="date">Date :</string>
+    <string name="time">Time :</string>
+    <string name="description">Description</string>
+    <string name="title">Title</string>
+    <string name="news_article_image">News Article Image</string>
 </resources>

@@ -8,19 +8,12 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.paging.PagedListAdapter;
-import androidx.recyclerview.widget.DiffUtil;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.narwalabhi.assignment.R;
 import com.narwalabhi.assignment.Utils.DateUtils;
 import com.narwalabhi.assignment.models.ArticlesItem;
-import com.narwalabhi.assignment.ui.BlankFragment;
 import com.squareup.picasso.Picasso;
-
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.Locale;
 
 public class ArticlesAdapter extends PagedListAdapter<ArticlesItem, ArticlesAdapter.ArticleViewHolder> {
 

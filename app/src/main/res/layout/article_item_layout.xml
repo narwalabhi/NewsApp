@@ -24,7 +24,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:srcCompat="@tools:sample/avatars" />
+            tools:srcCompat="@tools:sample/avatars"
+            android:contentDescription="@string/news_article_image" />
 
         <TextView
             android:id="@+id/tvTitle"
@@ -33,7 +34,7 @@
             android:layout_marginTop="8dp"
             android:ellipsize="end"
             android:maxLines="3"
-            android:text="Title"
+            android:text="@string/title"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             app:layout_constraintEnd_toEndOf="@+id/ivArticleImage"
             app:layout_constraintStart_toStartOf="@+id/ivArticleImage"
@@ -46,7 +47,7 @@
             android:layout_marginTop="8dp"
             android:ellipsize="end"
             android:maxLines="2"
-            android:text="Description"
+            android:text="@string/description"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="@+id/tvTitle"
@@ -58,7 +59,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Time : "
+            android:text="@string/time"
             app:layout_constraintEnd_toEndOf="@+id/tvDescription"
             app:layout_constraintStart_toStartOf="@+id/tvDescription"
             app:layout_constraintTop_toBottomOf="@+id/tvDescription" />
@@ -68,7 +69,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Date : "
+            android:text="@string/date"
             app:layout_constraintEnd_toEndOf="@+id/tvTime"
             app:layout_constraintStart_toStartOf="@+id/tvTime"
             app:layout_constraintTop_toBottomOf="@+id/tvTime" />

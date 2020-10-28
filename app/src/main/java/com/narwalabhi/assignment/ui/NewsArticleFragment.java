@@ -16,7 +16,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.narwalabhi.assignment.MainActivity;
 import com.narwalabhi.assignment.R;
 import com.narwalabhi.assignment.ViewArticleActivity;
 import com.narwalabhi.assignment.adapters.ArticlesAdapter;
@@ -25,22 +24,22 @@ import com.narwalabhi.assignment.viewModel.NewsListViewModel;
 import com.narwalabhi.assignment.viewModel.NewsListViewModelFactory;
 
 
-public class BlankFragment extends Fragment implements ArticlesAdapter.OnItemClickListener {
+public class NewsArticleFragment extends Fragment implements ArticlesAdapter.OnItemClickListener {
 
     private static final String ARG_PARAM1 = "sourceId";
     public static final String ARTICLE_URL_KEY = "article_url";
-    private static final String TAG = BlankFragment.class.getSimpleName();
+    private static final String TAG = NewsArticleFragment.class.getSimpleName();
     private NewsListViewModel newsListViewModel;
     private RecyclerView rvArticles;
     private String sourceID;
     private ArticlesAdapter adapter;
 
-    public BlankFragment() {
+    public NewsArticleFragment() {
         // Required empty public constructor
     }
 
-    public static BlankFragment newInstance(String param1) {
-        BlankFragment fragment = new BlankFragment();
+    public static NewsArticleFragment newInstance(String param1) {
+        NewsArticleFragment fragment = new NewsArticleFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         fragment.setArguments(args);
@@ -60,7 +59,7 @@ public class BlankFragment extends Fragment implements ArticlesAdapter.OnItemCli
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.fragment_blank, container, false);
+        View v = inflater.inflate(R.layout.fragment_news_article, container, false);
         rvArticles = v.findViewById(R.id.rvArticles);
         rvArticles.setLayoutManager(new LinearLayoutManager(container.getContext()));
         adapter = new ArticlesAdapter();

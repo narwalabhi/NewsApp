@@ -10,7 +10,7 @@ import android.view.KeyEvent;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-import com.narwalabhi.assignment.ui.BlankFragment;
+import com.narwalabhi.assignment.ui.NewsArticleFragment;
 
 public class ViewArticleActivity extends AppCompatActivity {
     WebView webView;
@@ -27,7 +27,7 @@ public class ViewArticleActivity extends AppCompatActivity {
             webView.getSettings().setJavaScriptEnabled(true);
             Intent intent = getIntent();
             if(intent != null && !intent.getExtras().isEmpty()){
-                String articleUrl = intent.getStringExtra(BlankFragment.ARTICLE_URL_KEY);
+                String articleUrl = intent.getStringExtra(NewsArticleFragment.ARTICLE_URL_KEY);
                 webView.loadUrl(articleUrl);
             }
         }
